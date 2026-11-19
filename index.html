@@ -1,0 +1,676 @@
+<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>इयत्ता 8 वी गणित भाग 2 - LBA 20 गुण प्रश्नपत्रिका जनरेटर | SmartGuruji</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f1f5f9;
+      font-family: "Noto Sans Devanagari", "Nirmala UI", Mangal, "Segoe UI", Arial, sans-serif;
+    }
+    #sg8mp2LbaRoot, #sg8mp2LbaRoot * { box-sizing: border-box; }
+    #sg8mp2LbaRoot {
+      width: 100%;
+      max-width: 1180px;
+      margin: 28px auto;
+      padding: 0 10px;
+      font-family: "Noto Sans Devanagari", "Nirmala UI", Mangal, "Segoe UI", Arial, sans-serif;
+      color: #1e293b;
+    }
+    #sg8mp2LbaRoot .sg8mp2-shell { background: #fff; border: 1px solid #e2e8f0; border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(15, 23, 42, .08); }
+    #sg8mp2LbaRoot .sg8mp2-hero { padding: 34px 24px 28px; text-align: center; color: #fff; background: linear-gradient(135deg, #0f766e, #1d4ed8 55%, #1e1b4b); }
+    #sg8mp2LbaRoot .sg8mp2-brand { display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 13px; }
+    #sg8mp2LbaRoot .sg8mp2-logo { display: flex; align-items: center; justify-content: center; width: 50px; height: 50px; border-radius: 14px; background: rgba(255, 255, 255, .15); border: 1px solid rgba(255, 255, 255, .35); font-size: 27px; }
+    #sg8mp2LbaRoot .sg8mp2-brand h2 { margin: 0 !important; color: #fff !important; font-size: 28px !important; font-weight: 900; }
+    #sg8mp2LbaRoot .sg8mp2-hero h3 { margin: 0 !important; color: #f8fafc !important; font-size: 20px !important; font-weight: 800; }
+    #sg8mp2LbaRoot .sg8mp2-tags { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+    #sg8mp2LbaRoot .sg8mp2-tag { padding: 6px 13px; border-radius: 50px; background: rgba(0, 0, 0, .22); border: 1px solid rgba(255, 255, 255, .28); font-size: 13px; font-weight: 800; }
+    #sg8mp2LbaRoot .sg8mp2-work { padding: 28px; background: #f8fafc; }
+    #sg8mp2LbaRoot .sg8mp2-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    #sg8mp2LbaRoot .sg8mp2-card { background: #fff; border: 1px solid #cbd5e1; border-radius: 16px; padding: 18px; box-shadow: 0 4px 8px rgba(15, 23, 42, .03); }
+    #sg8mp2LbaRoot .sg8mp2-label { display: flex; align-items: center; gap: 9px; margin-bottom: 11px; font-weight: 800; font-size: 15px; }
+    #sg8mp2LbaRoot .sg8mp2-step { padding: 4px 9px; border-radius: 8px; background: #e2e8f0; color: #334155; font-size: 12px; font-weight: 900; }
+    #sg8mp2LbaRoot .sg8mp2-control { width: 100%; padding: 12px 14px; border: 2px solid #cbd5e1; border-radius: 10px; background: #fff; color: #0f172a; font: 600 15px inherit; }
+    #sg8mp2LbaRoot .sg8mp2-control:focus { outline: none; border-color: #0f766e; box-shadow: 0 0 0 3px rgba(15, 118, 110, .15); }
+    #sg8mp2LbaRoot .sg8mp2-full { grid-column: 1 / -1; }
+    #sg8mp2LbaRoot .sg8mp2-modeTabs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    #sg8mp2LbaRoot .sg8mp2-tabBtn { padding: 12px 14px; border: 2px solid #cbd5e1; border-radius: 12px; background: #f8fafc; color: #334155; font: 800 14px inherit; cursor: pointer; transition: .2s; text-align: center; }
+    #sg8mp2LbaRoot .sg8mp2-tabBtn:hover { border-color: #0f766e; background: #f0fdfa; }
+    #sg8mp2LbaRoot .sg8mp2-tabBtn.sg8mp2-active { background: linear-gradient(135deg, #0f766e, #1d4ed8); color: #fff !important; border-color: transparent; box-shadow: 0 4px 12px rgba(29, 78, 216, .22); }
+    #sg8mp2LbaRoot .sg8mp2-lesson-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 14px; flex-wrap: wrap; }
+    #sg8mp2LbaRoot .sg8mp2-selectall { padding: 8px 12px; border: 0; border-radius: 9px; background: #334155; color: #fff; font: 800 13px inherit; cursor: pointer; }
+    #sg8mp2LbaRoot .sg8mp2-lessons { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    #sg8mp2LbaRoot .sg8mp2-lesson { display: flex; gap: 10px; align-items: flex-start; padding: 11px 12px; background: #f1f5f9; border: 1px solid transparent; border-radius: 10px; cursor: pointer; font-size: 14px; font-weight: 700; line-height: 1.45; }
+    #sg8mp2LbaRoot .sg8mp2-lesson:hover { background: #e2e8f0; border-color: #cbd5e1; }
+    #sg8mp2LbaRoot .sg8mp2-lesson input { width: 18px; height: 18px; margin-top: 2px; accent-color: #0f766e; }
+    #sg8mp2LbaRoot .sg8mp2-actions { margin-top: 22px; padding: 18px; background: #fff; border: 1px solid #cbd5e1; border-radius: 16px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    #sg8mp2LbaRoot .sg8mp2-btn { width: 100%; padding: 13px 12px; border: 0; border-radius: 10px; color: #fff !important; font: 800 14px inherit; cursor: pointer; transition: .2s; box-shadow: 0 5px 12px rgba(15, 23, 42, .11); }
+    #sg8mp2LbaRoot .sg8mp2-btn:hover:not(:disabled) { transform: translateY(-2px); filter: brightness(1.08); }
+    #sg8mp2LbaRoot .sg8mp2-btn:disabled { opacity: .5; cursor: not-allowed; }
+    #sg8mp2LbaRoot .sg8mp2-generate { background: linear-gradient(135deg, #7c3aed, #5b21b6) !important; }
+    #sg8mp2LbaRoot .sg8mp2-key { background: #d97706 !important; }
+    #sg8mp2LbaRoot .sg8mp2-preview { background: #2563eb !important; }
+    #sg8mp2LbaRoot .sg8mp2-print { background: #059669 !important; }
+    #sg8mp2LbaRoot .sg8mp2-status { display: none; margin-top: 14px; padding: 11px 14px; border-radius: 10px; font-size: 14px; font-weight: 800; text-align: center; }
+    #sg8mp2LbaRoot .sg8mp2-ok { display: block; background: #dcfce7; color: #166534; border: 1px solid #86efac; }
+    #sg8mp2LbaRoot .sg8mp2-warn { display: block; background: #fef3c7; color: #92400e; border: 1px solid #fcd34d; }
+    #sg8mp2LbaRoot .sg8mp2-previewArea { display: none; padding: 28px; background: #e2e8f0; border-top: 1px solid #cbd5e1; }
+    #sg8mp2LbaRoot .sg8mp2-previewBar { max-width: 210mm; margin: 0 auto 14px; display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+    #sg8mp2LbaRoot .sg8mp2-miniTab { padding: 8px 16px; border: 2px solid #94a3b8; border-radius: 50px; background: #fff; color: #1e293b; font: 800 13px inherit; cursor: pointer; }
+    #sg8mp2LbaRoot .sg8mp2-miniTab.sg8mp2-active { background: #0f766e; color: #fff !important; border-color: #0f766e; }
+    #sg8mp2LbaRoot .sg8mp2-sheet { width: 210mm; min-height: 297mm; margin: 0 auto; padding: 14mm 14mm 20mm; background: #fff; color: #000; box-shadow: 0 10px 30px rgba(0, 0, 0, .15); font-size: 15px; line-height: 1.7; position: relative; border: 2.5px solid #000; outline: 1px solid #000; outline-offset: -6px; }
+    #sg8mp2LbaRoot .sg8mp2-header { text-align: center; border-bottom: 2px solid #000; padding-bottom: 10px; margin-bottom: 16px; }
+    #sg8mp2LbaRoot .sg8mp2-school { font-size: 21px; font-weight: 900; margin: 0; }
+    #sg8mp2LbaRoot .sg8mp2-test { font-size: 16.5px; font-weight: 800; margin: 4px 0 6px; }
+    #sg8mp2LbaRoot .sg8mp2-modeBadge { display: inline-block; padding: 2px 10px; border: 1px solid #000; border-radius: 4px; font-size: 12.5px; font-weight: 800; margin-bottom: 6px; }
+    #sg8mp2LbaRoot .sg8mp2-meta { display: flex; justify-content: space-between; gap: 12px; margin-top: 6px; font-size: 13.5px; font-weight: 800; flex-wrap: wrap; padding: 0 4px; }
+    #sg8mp2LbaRoot .sg8mp2-studentRow { display: flex; justify-content: space-between; gap: 12px; margin-top: 9px; padding-top: 8px; border-top: 1px dashed #555; font-size: 13.5px; font-weight: 700; flex-wrap: wrap; }
+    #sg8mp2LbaRoot .sg8mp2-sec { margin-bottom: 14px; }
+    #sg8mp2LbaRoot .sg8mp2-qhead { display: flex; justify-content: space-between; align-items: baseline; font-size: 15.5px; font-weight: 900; margin: 14px 0 8px; padding-bottom: 3px; border-bottom: 1px solid #94a3b8; }
+    #sg8mp2LbaRoot .sg8mp2-qmarks { font-size: 13.5px; font-weight: 800; white-space: nowrap; margin-left: 10px; }
+    #sg8mp2LbaRoot .sg8mp2-qblock { margin: 8px 0 12px; break-inside: avoid; }
+    #sg8mp2LbaRoot .sg8mp2-q { margin: 6px 0 4px 10px; font-weight: 700; }
+    #sg8mp2LbaRoot .sg8mp2-options { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px 10px; margin: 4px 0 6px 26px; font-size: 14px; font-weight: 600; align-items: start; }
+    #sg8mp2LbaRoot .sg8mp2-ansLine { display: flex; align-items: flex-end; gap: 8px; margin: 6px 0 12px 26px; font-size: 13.5px; font-weight: 700; color: #222; }
+    #sg8mp2LbaRoot .sg8mp2-line { flex: 1; height: 24px; border-bottom: 1.2px dotted #444; }
+    #sg8mp2LbaRoot .sg8mp2-box { width: 94%; height: 90px; margin: 6px 0 12px 26px; border: 1px solid #666; border-radius: 4px; background: repeating-linear-gradient(to bottom, transparent 0, transparent 28px, #e2e8f0 28px, #e2e8f0 29px); }
+    #sg8mp2LbaRoot .sg8mp2-medbox { height: 125px; }
+    #sg8mp2LbaRoot .sg8mp2-longbox { height: 165px; }
+    #sg8mp2LbaRoot .sg8mp2-qpOnly .sg8mp2-qblock { margin: 7px 0 9px; }
+    #sg8mp2LbaRoot .sg8mp2-keySheet { display: none; margin-top: 24px; border-top: 3px dashed #94a3b8; padding-top: 18px; }
+    #sg8mp2LbaRoot .sg8mp2-keyTitle { text-align: center; text-decoration: underline; font-size: 18px; font-weight: 900; margin: 0 0 14px; }
+    #sg8mp2LbaRoot .sg8mp2-keyAns { margin: 5px 0 5px 18px; color: #b91c1c; font-weight: 700; font-size: 14.5px; }
+    #sg8mp2LbaRoot .sg8mp2-watermark { position: absolute; right: 14px; bottom: 10px; font-size: 11px; color: rgba(0, 0, 0, .38); font-style: italic; font-weight: 800; letter-spacing: .4px; }
+    @media (max-width: 900px) {
+      #sg8mp2LbaRoot .sg8mp2-actions { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 700px) {
+      #sg8mp2LbaRoot .sg8mp2-grid, #sg8mp2LbaRoot .sg8mp2-modeTabs, #sg8mp2LbaRoot .sg8mp2-lessons { grid-template-columns: 1fr; }
+      #sg8mp2LbaRoot .sg8mp2-full { grid-column: auto; }
+    }
+    @media (max-width: 600px) {
+      #sg8mp2LbaRoot .sg8mp2-work { padding: 16px; }
+      #sg8mp2LbaRoot .sg8mp2-actions { grid-template-columns: 1fr; padding: 14px; }
+      #sg8mp2LbaRoot .sg8mp2-hero { padding: 26px 15px; }
+      #sg8mp2LbaRoot .sg8mp2-brand h2 { font-size: 24px !important; }
+      #sg8mp2LbaRoot .sg8mp2-hero h3 { font-size: 17px !important; }
+      #sg8mp2LbaRoot .sg8mp2-sheet { width: 100%; min-height: auto; padding: 12px; font-size: 14px; }
+      #sg8mp2LbaRoot .sg8mp2-options { grid-template-columns: 1fr 1fr; margin-left: 14px; }
+      #sg8mp2LbaRoot .sg8mp2-q { margin-left: 4px; }
+      #sg8mp2LbaRoot .sg8mp2-ansLine, #sg8mp2LbaRoot .sg8mp2-box { margin-left: 8px; width: 96%; }
+    }
+    @media print {
+      body { background: #fff !important; }
+      body * { visibility: hidden !important; }
+      #sg8mp2LbaRoot, #sg8mp2LbaRoot * { visibility: visible !important; }
+      #sg8mp2LbaRoot { position: absolute; left: 0; top: 0; width: 100%; max-width: none; margin: 0; padding: 0; }
+      #sg8mp2LbaRoot .sg8mp2-hero, #sg8mp2LbaRoot .sg8mp2-work, #sg8mp2LbaRoot .sg8mp2-previewBar { display: none !important; }
+      #sg8mp2LbaRoot .sg8mp2-previewArea { display: block !important; padding: 0 !important; border: 0 !important; background: transparent !important; }
+      #sg8mp2LbaRoot .sg8mp2-sheet { width: 100%; min-height: 267mm; margin: 0; padding: 10mm 11mm 16mm; box-shadow: none; border: 2px solid #000 !important; outline: 1px solid #000 !important; outline-offset: -5px !important; }
+      #sg8mp2LbaRoot .sg8mp2-options { display: grid !important; grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+      #sg8mp2LbaRoot .sg8mp2-keySheet { display: none !important; }
+      #sg8mp2LbaRoot .sg8mp2-watermark { display: block !important; position: fixed; right: 12mm; bottom: 8mm; font-size: 10.5px; color: rgba(0, 0, 0, .42) !important; }
+      @page { size: A4; margin: 10mm; }
+    }
+  </style>
+
+
+
+<div id="sg8mp2LbaRoot">
+  <div class="sg8mp2-shell">
+    <header class="sg8mp2-hero">
+      <div class="sg8mp2-brand">
+        <div class="sg8mp2-logo">📐</div>
+        <h2>SmartGuruji</h2>
+      </div>
+      <h3>इयत्ता 8 वी गणित भाग - 2 – LBA प्रश्नपत्रिका जनरेटर (20 गुण)</h3>
+      <div class="sg8mp2-tags">
+        <span class="sg8mp2-tag">📝 LBA 2026-27</span>
+        <span class="sg8mp2-tag">🎯 20 गुण</span>
+        <span class="sg8mp2-tag">📚 घटक 8 ते 14</span>
+        <span class="sg8mp2-tag">📄 QP &amp; Q-Cum-Answer PDF</span>
+      </div>
+    </header>
+
+    <section class="sg8mp2-work">
+      <div class="sg8mp2-grid">
+        <div class="sg8mp2-card">
+          <div class="sg8mp2-label"><span class="sg8mp2-step">1</span>शाळेचे नाव</div>
+          <input id="sg8mp2School" class="sg8mp2-control" type="text" placeholder="उदा. सरकारी मराठी उच्च प्राथमिक शाळा">
+        </div>
+        <div class="sg8mp2-card">
+          <div class="sg8mp2-label"><span class="sg8mp2-step">2</span>चाचणीचे नाव</div>
+          <input id="sg8mp2Test" class="sg8mp2-control" type="text" placeholder="उदा. आकारिक मूल्यमापन / घटक चाचणी">
+        </div>
+        <div class="sg8mp2-card">
+          <div class="sg8mp2-label"><span class="sg8mp2-step">3</span>एकूण गुण</div>
+          <select id="sg8mp2Marks" class="sg8mp2-control">
+            <option value="20" selected="">20 गुण (LBA नमुना)</option>
+          </select>
+        </div>
+        <div class="sg8mp2-card">
+          <div class="sg8mp2-label"><span class="sg8mp2-step">4</span>वेळ निवडा</div>
+          <select id="sg8mp2Time" class="sg8mp2-control">
+            <option value="40">वेळ: 40 मिनिटे</option>
+            <option value="45" selected="">वेळ: 45 मिनिटे</option>
+            <option value="60">वेळ: 60 मिनिटे</option>
+          </select>
+        </div>
+        <div class="sg8mp2-card sg8mp2-full">
+          <div class="sg8mp2-label"><span class="sg8mp2-step">5</span>पेपर / PDF चा प्रकार निवडा</div>
+          <div class="sg8mp2-modeTabs">
+            <button type="button" class="sg8mp2-tabBtn sg8mp2-active" data-mode="qcas">📝 प्रश्न-कम-उत्तरपत्रिका (Question Cum Answer Sheet)</button>
+            <button type="button" class="sg8mp2-tabBtn" data-mode="qp">📄 फक्त प्रश्नपत्रिका (Question Paper Only)</button>
+          </div>
+        </div>
+        <div class="sg8mp2-card sg8mp2-full">
+          <div class="sg8mp2-lesson-head">
+            <div class="sg8mp2-label" style="margin:0"><span class="sg8mp2-step">6</span>एक किंवा अनेक पाठ निवडा (भाग - 2)</div>
+            <button type="button" id="sg8mp2SelectAll" class="sg8mp2-selectall">सर्व पाठ निवडा / काढा</button>
+          </div>
+          <div class="sg8mp2-lessons" id="sg8mp2Lessons"></div>
+        </div>
+      </div>
+
+      <div class="sg8mp2-actions">
+        <button type="button" id="sg8mp2Generate" class="sg8mp2-btn sg8mp2-generate">📄 पेपर तयार करा</button>
+        <button type="button" id="sg8mp2Key" class="sg8mp2-btn sg8mp2-key" disabled="">🔑 उत्तरतालिका दाखवा / लपवा</button>
+        <button type="button" id="sg8mp2Preview" class="sg8mp2-btn sg8mp2-preview" disabled="">👁️ Preview पाहा</button>
+        <button type="button" id="sg8mp2Print" class="sg8mp2-btn sg8mp2-print" disabled="">🖨️ Print / Save PDF</button>
+      </div>
+      <div id="sg8mp2Status" class="sg8mp2-status"></div>
+    </section>
+
+    <section id="sg8mp2PreviewArea" class="sg8mp2-previewArea">
+      <div class="sg8mp2-previewBar">
+        <button type="button" class="sg8mp2-miniTab sg8mp2-active" data-mode="qcas">📝 Question Cum Answer Sheet</button>
+        <button type="button" class="sg8mp2-miniTab" data-mode="qp">📄 Question Paper Only</button>
+      </div>
+      <div id="sg8mp2Paper" class="sg8mp2-sheet"></div>
+    </section>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var root = document.getElementById("sg8mp2LbaRoot");
+  if (!root || root.getAttribute("data-ready")) return;
+  root.setAttribute("data-ready", "1");
+
+  var DB = {
+    "8": {
+      title: "अपूर्णांकाचे स्वरूप बदलणे (वेषांतर) (Fraction in Disguise)",
+      blueprint: { mcq: 4, m1: 3, m2: 3, m3: 1, m4: 1 },
+      mcq: [
+        ["'Percentage' हा शब्द कोणत्या लॅटिन शब्दापासून तयार झाला आहे?", ["सेंटीमीटर", "सेंटम", "सेंट्रल", "सेंटर"], "B) सेंटम"],
+        ["24 च्या 50% ची किंमत किती आहे?", ["10", "12", "15", "48"], "B) 12"],
+        ["40% चे अपूर्णांकातील सर्वात सोपे रूप कोणते आहे?", ["2/5", "10/25", "1/4", "4/10"], "A) 2/5"],
+        ["3/4 या अपूर्णांकाचे टक्केवारीतील रूप कोणते आहे?", ["25%", "50%", "75%", "100%"], "C) 75%"],
+        ["एका वस्तूची किंमत ₹200 आहे. 10% वाढल्यास नवीन किंमत किती?", ["₹190", "₹210", "₹220", "₹240"], "C) ₹220"],
+        ["0.05 चे टक्केवारीतील रूप कोणते आहे?", ["0.5%", "5%", "500%", "50%"], "B) 5%"],
+        ["₹1800 छापील किमतीच्या कुकरवर 35% सूट असल्यास विक्री किंमत किती?", ["₹1765", "₹630", "₹1170", "₹1835"], "C) ₹1170"],
+        ["एका वस्तूवर आधी 30% आणि नंतर 20% सलग सूट दिल्यास एकूण सूट किती?", ["50%", "44%", "40%", "30%"], "B) 44%"]
+      ],
+      m1: [
+        ["25% हे दशांश रूपात लिहा.", "0.25"],
+        ["जर K चे 30% हे 70 असेल, तर K चे 60% किती असेल?", "2 × 70 = 140"],
+        ["मुद्दल 'P', दर 'R' आणि मुदत 'T' असताना सरळव्याज काढण्याचे सूत्र लिहा.", "SI = (P × R × T) / 100"],
+        ["4/5, 0.7, 65% हे उतरत्या क्रमाने लावा.", "4/5 > 0.7 > 65% (कारण 0.8 > 0.7 > 0.65)"],
+        ["सूर्याने ₹500 च्या बक्षिसापैकी 2/5 भाग कॅनव्हाससाठी वापरला, तर त्याने किती रुपये खर्च केले?", "(2/5) × 500 = ₹200"]
+      ],
+      m2: [
+        ["खालील अपूर्णांक टक्केवारीच्या रूपात व्यक्त करा: a) 3/5  b) 5/11", "a) (3/5)×100 = 60%  b) (5/11)×100 = 45.45%"],
+        ["किंमत काढा: 160 चे 55% + 50 चे 24% - 150 चे 36%", "88 + 12 - 54 = 46"],
+        ["एका संख्येत 20% वाढ केल्यास ती 90 होते, तर मूळ संख्या कोणती?", "1.20 × x = 90 ⇒ x = 75"],
+        ["एका व्यक्तीने 10 किलो तांदूळ ₹500 ला खरेदी करून ₹450 ला विकला, तर तोट्याची टक्केवारी काढा.", "तोटा = ₹50; तोटा % = (50/500) × 100 = 10%"],
+        ["₹50,000 किमतीच्या लॅपटॉपवर 18% जीएसटी आकारल्यास एकूण किती कर भरावा लागेल?", "(18/100) × 50,000 = ₹9,000"],
+        ["एका टाकीत 5000 लिटर पाणी आहे. 6% पाणी गळतीमुळे वाहून गेले, तर टाकीत किती लिटर पाणी शिल्लक राहिले?", "गळती = 300 लिटर; शिल्लक पाणी = 5000 - 300 = 4700 लिटर"]
+      ],
+      m3: [
+        ["एका सायकलची किंमत ₹10,000 आहे. आधी किंमत 10% ने वाढवली व नंतर नवीन किमतीवर 15% सूट दिली. सायकलची अंतिम किंमत काढा.", "वाढलेली किंमत = ₹11,000; 15% सूट = ₹1,650; अंतिम किंमत = ₹9,350"],
+        ["एका सायकलस्वाराने दिल्ली ते आग्रा प्रवासाचा 40% भाग (92 किमी) पूर्ण केला. आग्रा येथे पोहोचण्यासाठी त्याला आणखी किती अंतर पार करावे लागेल?", "एकूण अंतर = (92×100)/40 = 230 किमी; उर्वरित अंतर = 230 - 92 = 138 किमी"],
+        ["एक व्यक्ती रेडिओ ₹605 ला विकून 10% नफा मिळवतो. 16% नफा मिळवण्यासाठी त्याने तसाच रेडिओ कोणत्या किमतीला विकावा?", "खरेदी किंमत = (605×100)/110 = ₹550; 16% नफ्याने विक्री किंमत = ₹638"]
+      ],
+      m4: [
+        ["सौम्या 3 वर्षांसाठी द.सा.द.शे. 10% चक्रवाढ व्याजदराने ₹9,600 गुंतवते. पहिल्या, दुसऱ्या आणि तिसऱ्या वर्षाचे व्याज काढा.", "1ले वर्ष: ₹960 (रास ₹10,560); 2रे वर्ष: ₹1,056 (रास ₹11,616); 3रे वर्ष: ₹1,161.60"],
+        ["एका सहलीत 40% विद्यार्थी इयत्ता 8 वीचे असून त्यांपैकी 60% मुली आहेत. (i) एकूण विद्यार्थ्यांपैकी 8 वीच्या मुलींची टक्केवारी किती? (ii) एकूण विद्यार्थी 150 असल्यास 8 वीच्या मुलींची संख्या काढा.", "(i) 40% चे 60% = 24%  (ii) 150 चे 24% = 36 मुली"],
+        ["जोसेफ 2 वर्षांसाठी 10% चक्रवाढ व्याजदराने ₹12,000 कर्ज घेतो व पहिल्या वर्षाअखेर ₹8,000 परत करतो. खाते बंद करण्यासाठी दुसऱ्या वर्षाअखेर त्याला किती रक्कम भरावी लागेल?", "1ल्या वर्षाअखेर रास = ₹13,200; शिल्लक मुद्दल = ₹5,200; 2ऱ्या वर्षाचे व्याज = ₹520; एकूण देय रक्कम = ₹5,720"]
+      ]
+    },
+    "9": {
+      title: "बौधायन - पायथागोरस प्रमेय",
+      blueprint: { mcq: 4, m1: 2, m2: 2, m3: 2, m4: 1 },
+      mcq: [
+        ["√2 ही एक ________ संख्या आहे.", ["नैसर्गिक", "पूर्णांक", "अपरिमेय", "परिमेय"], "C) अपरिमेय"],
+        ["√2 चे अंदाजे मूल्य किती आहे?", ["1.54262", "3.14156", "1.13246", "1.41421"], "D) 1.41421"],
+        ["बौधायन त्रिकूट (a, b, c) मध्ये a = 60, b = 80 असल्यास c किती?", ["140", "70", "20", "100"], "D) 100"],
+        ["(5, 12, 13) या त्रिकूटाची विस्तारित आवृत्ती कोणती?", ["(10, 24, 26)", "(15, 26, 29)", "(50, 110, 130)", "वरील सर्व"], "A) (10, 24, 26)"],
+        ["चौरसाचे क्षेत्रफळ दुप्पट करण्याविषयी माहिती देणारा ग्रंथ कोणता?", ["आर्यभटीय", "लीलावती", "शुल्बसूत्र", "ब्राह्मस्फुट"], "C) शुल्बसूत्र"],
+        ["चौरसाच्या कर्णावर काढलेल्या चौरसाचे क्षेत्रफळ मूळ चौरसाच्या ________ असते.", ["तिप्पट", "दुप्पट", "चौपट", "अर्धे"], "B) दुप्पट"],
+        ["1 एकक बाजू असलेल्या चौरसाच्या कर्णाची लांबी किती?", ["1 एकक", "2 एकक", "√2 एकक", "4 एकक"], "C) √2 एकक"],
+        ["समभुज चौकोनाचे कर्ण 30 सेमी व 16 सेमी असल्यास त्याची परिमिती किती?", ["17 सेमी", "46 सेमी", "34 सेमी", "68 सेमी"], "D) 68 सेमी"]
+      ],
+      m1: [
+        ["बौधायन त्रिकूट म्हणजे काय?", "a² + b² = c² या समीकरणाचे समाधान करणारे धन पूर्णांकांचे त्रिकूट (a, b, c)."],
+        ["मूळ (Primitive) बौधायन त्रिकूट म्हणजे काय?", "ज्या बौधायन त्रिकूटामध्ये 1 पेक्षा मोठा कोणताही सामायिक अवयव नसतो."],
+        ["'a' एकक बाजू असलेल्या चौरसाच्या कर्णावर तयार झालेल्या चौरसाचे क्षेत्रफळ किती असेल?", "2a² चौ. एकक"],
+        ["काटकोन त्रिकोणाबाबतचा बौधायन यांचा सिद्धांत सांगा.", "काटकोन त्रिकोणात कर्णावर तयार झालेल्या चौरसाचे क्षेत्रफळ इतर दोन बाजूंवरील चौरसांच्या क्षेत्रफळांच्या बेरजेइतके असते (a² + b² = c²)."],
+        ["वीसपेक्षा लहान संख्या असलेले एक बौधायन त्रिकूट लिहा.", "(3, 4, 5) किंवा (5, 12, 13) किंवा (9, 12, 15)."]
+      ],
+      m2: [
+        ["सिद्ध करा की जर (5, 12, 13) हे बौधायन त्रिकूट असेल, तर (5k, 12k, 13k) हे सुद्धा बौधायन त्रिकूट असेल.", "(5k)² + (12k)² = 25k² + 144k² = 169k² = (13k)²."],
+        ["एका समद्विभुज काटकोन त्रिकोणाच्या समान बाजूंची लांबी 10 सेमी आहे, तर त्याचे क्षेत्रफळ आणि कर्णाची लांबी काढा.", "क्षेत्रफळ = (1/2)×10×10 = 50 चौ.सेमी; कर्ण = √200 = 10√2 सेमी."],
+        ["जर एका समद्विभुज काटकोन त्रिकोणाचा कर्ण √128 एकक असेल, तर इतर दोन बाजूंची लांबी काढा.", "2a² = 128 ⇒ a² = 64 ⇒ a = 8 एकक."],
+        ["काटकोन त्रिकोणात a = 5 सेमी आणि कर्ण c = 13 सेमी असल्यास बाजू b ची लांबी काढा.", "b = √(13² - 5²) = √(169 - 25) = √144 = 12 सेमी."],
+        ["(3k, 4k, 5k) यावरून पहिली चार बौधायन त्रिकूटे लिहा.", "(3, 4, 5), (6, 8, 10), (9, 12, 15), (12, 16, 20)."]
+      ],
+      m3: [
+        ["एक प्रवासी एका बिंदूपासून पूर्वेकडे 150 मीटर आणि तेथून उत्तरेकडे 200 मीटर जातो. तो सुरुवातीच्या बिंदूपासून किती अंतरावर आहे?", "अंतर = √(150² + 200²) = √62500 = 250 मीटर."],
+        ["एका तलावात कमळाच्या देठाचे टोक पाण्यावर 1 एकक उंच आहे. वाऱ्यामुळे ते मूळ स्थितीपासून 3 एकक अंतरावर पाण्याला स्पर्श करते. तलावाची खोली काढा.", "x² + 3² = (x + 1)² ⇒ 2x = 8 ⇒ x = 4 एकक."],
+        ["जर एका समभुज चौकोनाचे कर्ण 30 एकक आणि 72 एकक असतील, तर त्याच्या बाजूची लांबी शोधा.", "अर्धे कर्ण = 15 व 36; बाजू = √(15² + 36²) = √1521 = 39 एकक."],
+        ["6 एकक बाजू असलेल्या समभुज त्रिकोणाची उंची व क्षेत्रफळ बौधायन प्रमेयाचा वापर करून काढा.", "उंची = √(6² - 3²) = √27 = 3√3 एकक; क्षेत्रफळ = (1/2)×6×3√3 = 9√3 चौ. एकक."]
+      ],
+      m4: [
+        ["32 फूट लांबीचा एक बांबू वादळामुळे मधेच मोडला; त्याचे टोक जमिनीला बुंध्यापासून 16 फूट अंतरावर स्पर्श करते. तो बांबू बुंध्यापासून किती उंचीवर मोडला?", "x² + 16² = (32 - x)² ⇒ x² + 256 = 1024 - 64x + x² ⇒ 64x = 768 ⇒ x = 12 फूट."],
+        ["एका काटकोन त्रिकोणाची एक बाजू 8 सेमी आणि कर्ण 17 सेमी लांबीचा आहे. तिसऱ्या बाजूची लांबी बौधायन प्रमेयाने काढा आणि उत्तराची पडताळणी करा.", "तिसरी बाजू = √(17² - 8²) = √(289 - 64) = √225 = 15 सेमी; पडताळणी: 8² + 15² = 64 + 225 = 289 = 17²."]
+      ]
+    },
+    "10": {
+      title: "प्रमाणातील तर्क - 2",
+      blueprint: { mcq: 5, m1: 2, m2: 3, m3: 1, m4: 1 },
+      mcq: [
+        ["जर 2, 5, 4 आणि 10 समप्रमाणात असतील, तर अचूक संबंध कोणता?", ["2×5 = 4×10", "2×4 = 5×10", "2×10 = 4×5", "2+10 = 4+5"], "C) 2×10 = 4×5"],
+        ["जर 3 : 4 = x : 12, तर x ची किंमत किती असेल?", ["2", "52", "9", "36"], "C) 9"],
+        ["₹2000 हे A आणि B मध्ये 2 : 3 गुणोत्तरात विभागल्यास A चा वाटा किती?", ["₹1200", "₹500", "₹400", "₹800"], "D) ₹800"],
+        ["5 किग्रॅ तांदळाची किंमत ₹250 असल्यास 8 किग्रॅ तांदळाची किंमत किती?", ["₹500", "₹400", "₹450", "₹125"], "B) ₹400"],
+        ["जर x : y = 1 : 3 आणि x = 10, तर y ची किंमत किती असेल?", ["3.3", "30", "3/10", "1/3"], "B) 30"],
+        ["a हे b च्या व्यस्तप्रमाणात असून k हा स्थिरांक असल्यास अचूक संबंध कोणता?", ["ab = k", "a = bk", "a/b = k", "a/b = 1"], "A) ab = k"],
+        ["व्यस्तप्रमाणातील एक राशी n पटीने बदलली, तर दुसरी राशी किती पटीने बदलेल?", ["n", "2n", "n/2", "1/n"], "D) 1/n"]
+      ],
+      m1: [
+        ["प्रमाणाचा प्रकार ओळखा: 'वर्तुळाची त्रिज्या आणि त्याचा परिघ'.", "समप्रमाण (Direct Proportion)"],
+        ["जर समप्रमाणातील दोन राशींपैकी एक राशी वाढली, तर दुसरी राशी कशी बदलेल?", "दुसरी राशी देखील वाढते."],
+        ["जर व्यस्तप्रमाणातील दोन राशींपैकी एक राशी दुप्पट झाली, तर दुसरी राशी कशी बदलेल?", "दुसरी राशी अर्धी होते."],
+        ["100 गोड पदार्थांसाठी पीठ, साखर, तूप 1 : 1.5 : 2 किग्रॅ लागते. 200 पदार्थांसाठी किती लागेल?", "पीठ 2 किग्रॅ, साखर 3 किग्रॅ, तूप 4 किग्रॅ."]
+      ],
+      m2: [
+        ["राष्ट्रीय ध्वजाची लांबी आणि रुंदीचे गुणोत्तर 3 : 2 आहे. लांबी 4.5 मीटर असल्यास रुंदी शोधा.", "3 : 2 = 4.5 : x ⇒ 3x = 9 ⇒ x = 3 मीटर."],
+        ["एका समांतरभुज चौकोनाचे लगतचे कोन 3 : 7 गुणोत्तरात आहेत, तर ते कोन शोधा.", "3x + 7x = 180° ⇒ x = 18°; कोन = 54° आणि 126°."],
+        ["30 कामगारांना एक रस्ता तयार करण्यासाठी 4 दिवस लागतात, तर 10 कामगारांना किती दिवस लागतील?", "30 × 4 = 10 × x ⇒ x = 12 दिवस."],
+        ["2 पंप एक टाकी 18 तासांत भरतात. आणखी 2 पंप जोडल्यास ती टाकी भरण्यास किती वेळ लागेल?", "2 × 18 = 4 × x ⇒ x = 9 तास."],
+        ["एका शाळेत 80 विद्यार्थ्यांना 15 दिवस पुरेल एवढी अन्नसामग्री आहे. आणखी 20 विद्यार्थी आल्यास ती किती दिवस पुरेल?", "80 × 15 = 100 × x ⇒ x = 12 दिवस."]
+      ],
+      m3: [
+        ["एका त्रिकोणाचे अंतरकोन 3 : 4 : 5 या प्रमाणात आहेत. त्या त्रिकोणाचे कोन काढा आणि त्रिकोणाचा प्रकार सांगा.", "12x = 180° ⇒ x = 15°; कोन = 45°, 60°, 75°; हा लघुकोन त्रिकोण आहे."],
+        ["5 कामगार एका दिवसात 4000 विटा तयार करतात. एका दिवसात 12,000 विटा तयार करण्यासाठी किती कामगार लागतील? हे कोणते प्रमाण आहे?", "1 : 800 = x : 12000 ⇒ x = 15 कामगार; हे समप्रमाण आहे."],
+        ["12 कामगार एक काम 20 दिवसांत पूर्ण करतात, तर 15 कामगारांना तेच काम पूर्ण करण्यास किती दिवस लागतील? प्रत्येक कामगार एका दिवसात किती काम करेल?", "12 × 20 = 15 × x ⇒ x = 16 दिवस; एका कामगाराचे 1 दिवसाचे काम = 1/240."]
+      ],
+      m4: [
+        ["माझ्याकडे एकूण 100 नाणी असून ₹10, ₹5, ₹2 आणि ₹1 च्या नाण्यांचे गुणोत्तर 4 : 3 : 2 : 1 आहे. माझ्याकडे एकूण किती रक्कम आहे?", "नाणी: 40, 30, 20, 10; एकूण रक्कम = (40×10)+(30×5)+(20×2)+(10×1) = ₹600."],
+        ["एक लहान पंप एक टाकी 5 तासांत व मोठा पंप 3 तासांत भरतो. दोन्ही पंप एकत्र सुरू केल्यास ती टाकी भरण्यासाठी किती वेळ लागेल?", "1 तासात = 1/5 + 1/3 = 8/15 भाग; एकूण वेळ = 15/8 तास = 1 तास 52 मिनिटे 30 सेकंद."],
+        ["प्रार्थनेसाठी विद्यार्थ्यांना 15 ओळींत प्रत्येकी 40 याप्रमाणे उभे केले जाते. प्रत्येक ओळीत 20 विद्यार्थी उभे केल्यास एकूण किती ओळी होतील व एकूण विद्यार्थी किती?", "एकूण विद्यार्थी = 15 × 40 = 600; नवीन ओळी = 600 ÷ 20 = 30 ओळी."]
+      ]
+    },
+    "11": {
+      title: "काही भौमितिक संकल्पनांचा शोध",
+      blueprint: { mcq: 4, m1: 4, m2: 1, m3: 2, m4: 1 },
+      mcq: [
+        ["एका घनाकृतीची (Cube) एकूण किती संभाव्य जाळी (Nets) असू शकतात?", ["2", "4", "11", "12"], "C) 11"],
+        ["जर एखाद्या सूचीचा (Pyramid) पाया पंचकोन असेल, तर तिला एकूण किती पृष्ठभाग असतील?", ["2", "8", "4", "6"], "D) 6"],
+        ["6 पृष्ठभाग, 8 शिरोबिंदू आणि 12 कडा असणारी त्रिमितीय आकृती कोणती?", ["त्रिकोणी चिती", "षटकोणी सूची", "चौरस चिती", "पंचकोणी चिती"], "C) चौरस चिती"],
+        ["एक वृत्तचिती प्रतलावर कोणते प्रक्षेप तयार करते?", ["त्रिकोण", "वर्तुळ", "आयत", "वर्तुळ किंवा आयत"], "D) वर्तुळ किंवा आयत"],
+        ["सिअरपिन्स्की कार्पेटमध्ये टप्पा 2 वर किती छायांकित चौरस शिल्लक राहतात?", ["32", "64", "16", "128"], "B) 64"],
+        ["सिअरपिन्स्की गॅस्केटमध्ये टप्पा 'n' वर शिल्लक त्रिकोणांचे सूत्र कोणते?", ["2ⁿ", "3ⁿ", "4ⁿ", "8ⁿ"], "B) 3ⁿ"],
+        ["एका षटकोणी चितीला एकूण किती पृष्ठभाग असतात?", ["6", "7", "8", "10"], "C) 8"],
+        ["त्रिमितीय वस्तू सपाट उघडल्यावर तयार होणाऱ्या द्विमितीय आकृतीला काय म्हणतात?", ["पृष्ठभाग", "शिरोबिंदू", "जाळी (Net)", "कडा"], "C) जाळी (Net)"]
+      ],
+      m1: [
+        ["एका इष्टिकाचितीची (Cuboid) एकूण किती संभाव्य जाळी असू शकतात?", "54"],
+        ["निसर्गात आढळणाऱ्या दोन फ्रॅक्टल आकृतीबंधांची नावे सांगा.", "फर्नची पाने, बर्फाचे तुकडे (स्नोफ्लेक्स) किंवा नद्यांचे जाळे."],
+        ["सिअरपिन्स्की कार्पेटमध्ये n-व्या टप्प्यावर शिल्लक राहिलेल्या चौरसांचे सूत्र लिहा.", "Rₙ = 8ⁿ"],
+        ["एका षटकोणी सूचीला (Hexagonal pyramid) एकूण किती कडा असतात?", "12 कडा"],
+        ["एका चौरस सूचीला (Square pyramid) एकूण किती शिरोबिंदू असतात?", "5 शिरोबिंदू"],
+        ["प्रक्षेप (Projection) म्हणजे काय?", "त्रिमितीय (3D) वस्तूचे द्विमितीय (2D) पृष्ठभागावर केलेले सादरीकरण."]
+      ],
+      m2: [
+        ["त्रिमितीय आकृतीची जाळी (Net) म्हणजे काय? एक उदाहरण द्या.", "कडांवरून दुमडून 3D आकार तयार करता येणारा 2D नमुना; उदा. घनाची 6 चौरसांची जाळी."],
+        ["त्रिमितीय भूमितीच्या संदर्भात पृष्ठभाग (Faces) आणि कडा (Edges) यांच्या व्याख्या लिहा.", "पृष्ठभाग: 3D वस्तूची सीमा ठरवणारा सपाट 2D भाग. कडा: दोन पृष्ठभाग जिथे मिळतात तो रेषाखंड."],
+        ["चिती (Prism) आणि सूची (Pyramid) यांमधील फरक लिहा.", "चितीला दोन एकरूप समांतर पाया व आयताकृती बाजू असतात; सूचीला एकच पाया व एका शिरोबिंदूत मिळणाऱ्या त्रिकोणी बाजू असतात."]
+      ],
+      m3: [
+        ["फ्रॅक्टल (Fractal) ची व्याख्या लिहा आणि निसर्गातील स्वनिःसारखेपणाची तीन उदाहरणे द्या.", "वेगवेगळ्या स्केलवर स्वतःसारखेपणा दर्शवणारा गुंतागुंतीचा आकार; उदा. विजेचा मार्ग, किनारपट्ट्या, रक्तवाहिन्यांचे जाळे."],
+        ["सिअरपिन्स्की गॅस्केट (त्रिकोण) तयार करण्याच्या पायऱ्या स्पष्ट करा.", "टप्पा 0: भरीव समभुज त्रिकोण; टप्पा 1: बाजूंचे मध्यबिंदू जोडून मधला उलटा त्रिकोण काढून टाकणे; टप्पा 2: उरलेल्या 3 त्रिकोणांवर हीच प्रक्रिया पुन्हा करणे."],
+        ["जर एका पिरॅमिडचा पाया 10 बाजू असलेला बहुभुज असेल, तर त्याच्या पृष्ठभागांची आणि कडांची संख्या काढा.", "पृष्ठभाग = n + 1 = 10 + 1 = 11; कडा = 2n = 2 × 10 = 20."]
+      ],
+      m4: [
+        ["सिअरपिन्स्की कार्पेट तयार करण्याची प्रक्रिया स्पष्ट करा आणि टप्पा 2 पर्यंत उरलेले चौरस (Rₙ) व छिद्रे (Hₙ) यांची संख्या लिहा.", "चौरसाचे 3×3 लहान चौरसांत विभाजन करून मधला चौरस काढणे व प्रक्रिया पुन्हा करणे. टप्पा 0: R₀=1, H₀=0; टप्पा 1: R₁=8, H₁=1; टप्पा 2: R₂=64, H₂=9."],
+        ["समोरून (Front), वरून (Top) आणि बाजूने (Side) दिसणारे दृश्य स्पष्ट करा. त्रिमितीय वस्तूच्या संपूर्ण वर्णनासाठी एकच प्रक्षेप का पुरेसा नसतो?", "एकच 2D प्रक्षेप तीनपैकी एक परिमाण लपवतो (उदा. वरून वृत्तचिती व गोल दोन्ही वर्तुळ दिसतात); म्हणून लांबी, रुंदी व उंचीसाठी तीन लंब दृश्ये आवश्यक असतात."]
+      ]
+    },
+    "12": {
+      title: "बिंदू आणि रेषांच्या गोष्टी",
+      blueprint: { mcq: 5, m1: 3, m2: 3, m3: 2, m4: 0 },
+      mcq: [
+        ["जर माहितीमधील प्रत्येक मूल्य 7 ने वाढवले, तर नवीन सरासरी ________.", ["सारखीच राहते", "7 ने वाढते", "14 ने वाढते", "7 ने गुणली जाते"], "B) 7 ने वाढते"],
+        ["5, 8, 12, 15, 20 या गुणांची सरासरी किती आहे?", ["12", "8", "15", "10"], "A) 12"],
+        ["जर चार संख्यांची सरासरी 10 असेल, तर त्यांची बेरीज किती असेल?", ["40", "20", "10", "5"], "A) 40"],
+        ["स्प्रेडशीटमध्ये ओळ आणि स्तंभ यांच्या छेदनबिंदूला काय म्हणतात?", ["बॉक्स", "सेल", "ग्रिड", "बिंदू"], "B) सेल"],
+        ["स्प्रेडशीटमध्ये C1 ते C20 मधील सर्वात मोठे मूल्य शोधण्याचे सूत्र कोणते?", ["=MAX(C1:C20)", "=HIGH(C1:C20)", "=LARGE(C1:C20)", "=SUM(C1:C20)"], "A) =MAX(C1:C20)"],
+        ["दिवसभरातील तापमानातील बदल दर्शवण्यासाठी कोणता आलेख सर्वात योग्य आहे?", ["पाय चार्ट", "स्तंभ आलेख", "रेषा आलेख", "डॉट प्लॉट"], "C) रेषा आलेख"],
+        ["5 संख्यांची सरासरी 10 आहे. नवीन संख्या जोडल्यास सरासरी 11 होते, तर नवीन संख्या कोणती?", ["11", "15", "16", "20"], "C) 16"],
+        ["डॉट प्लॉटमधील 'संतुलन बिंदू' (Balance point) म्हणजे काय?", ["कमाल मूल्य", "किमान मूल्य", "माहितीची सरासरी", "मध्यक"], "C) माहितीची सरासरी"]
+      ],
+      m1: [
+        ["दिलेल्या सामग्रीची सरासरी काढा: 12, 8, 15, 10, 5.", "50 ÷ 5 = 10"],
+        ["पहिल्या 5 सम नैसर्गिक संख्यांची सरासरी किती आहे?", "(2 + 4 + 6 + 8 + 10) ÷ 5 = 6"],
+        ["स्प्रेडशीटमध्ये प्रत्येक सूत्राची सुरुवात कोणत्या चिन्हाने होते?", "बरोबरचे चिन्ह (=)"],
+        ["खालील सामग्रीचा मध्यक (Median) काढा: 5, 12, 3, 8, 10.", "चढता क्रम: 3, 5, 8, 10, 12; मध्यक = 8"],
+        ["सामग्रीची 'व्याप्ती' (Range) म्हणजे काय?", "कमाल मूल्य आणि किमान मूल्य यांमधील फरक."]
+      ],
+      m2: [
+        ["5 विद्यार्थ्यांचे वजन 42, 45, 48, 50 आणि 45 किग्रॅ आहे. त्यांचे सरासरी वजन काढा.", "230 ÷ 5 = 46 किग्रॅ"],
+        ["5 मित्रांचे सरासरी वय 16 वर्षे आहे. चार मित्रांचे वय 12, 14, 18, 20 वर्षे असल्यास पाचव्या मित्राचे वय काढा.", "एकूण = 80; पाचव्याचे वय = 80 - 64 = 16 वर्षे."],
+        ["6 संख्यांची सरासरी 12 आहे. एक संख्या वगळल्यास सरासरी 11 होते, तर वगळलेली संख्या शोधा.", "(6 × 12) - (5 × 11) = 72 - 55 = 17."],
+        ["20 संख्यांच्या समूहाची सरासरी 45 आहे. प्रत्येक संख्येला 3 ने गुणल्यास नवीन सरासरी काय असेल?", "45 × 3 = 135."]
+      ],
+      m3: [
+        ["8 खेळाडूंचे सरासरी वजन 39.2 किग्रॅ आहे. 7 खेळाडूंचे वजन 42, 40, 39, 33, 48, 38 आणि 42 किग्रॅ असल्यास 8 व्या खेळाडूचे वजन काढा.", "एकूण = 313.6 किग्रॅ; 8 वे वजन = 313.6 - 282 = 31.6 किग्रॅ."],
+        ["एका कारखान्यातील 20 कामगारांचे सरासरी वेतन ₹5000 आहे. व्यवस्थापकाचे वेतन मिळवल्यास सरासरी ₹5500 होते, तर व्यवस्थापकाचे वेतन किती?", "(21 × 5500) - (20 × 5000) = 1,15,500 - 1,00,000 = ₹15,500."],
+        ["एका परीक्षेत 6 विद्यार्थ्यांचे सरासरी गुण 75 आहेत. पुनर्मूल्यांकनानंतर एकाचे गुण 60 ऐवजी 90 धरले गेले, तर अचूक सरासरी काढा.", "अचूक बेरीज = 450 - 60 + 90 = 480; अचूक सरासरी = 480 ÷ 6 = 80."],
+        ["स्प्रेडशीटमधील पुढील सूत्रांचे कार्य स्पष्ट करा: (i) =MAX(A1:A10)  (ii) =SUM(B2:B10)  (iii) =MIN(C2:C12)", "(i) सर्वात मोठे मूल्य शोधते, (ii) संख्यांची बेरीज करते, (iii) सर्वात लहान मूल्य शोधते."]
+      ],
+      m4: [
+        ["खालील माहितीची सरासरी (Mean) काढा: (i) पहिल्या 50 नैसर्गिक संख्या  (ii) पहिल्या 50 विषम संख्या  (iii) 4 च्या पहिल्या 50 पटी.", "(i) 51/2 = 25.5  (ii) 50  (iii) (4+200)/2 = 102."],
+        ["10 विद्यार्थ्यांचे वजन (किग्रॅ): 40, 42, 45, 48, 50, 42, 45, 48, 50, 50. सरासरी, मध्यक आणि बहुलक काढा.", "सरासरी = 460/10 = 46 किग्रॅ; मध्यक = (45+48)/2 = 46.5 किग्रॅ; बहुलक = 50 किग्रॅ."]
+      ]
+    },
+    "13": {
+      title: "बीजगणितीय खेळ",
+      blueprint: { mcq: 3, m1: 3, m2: 2, m3: 2, m4: 1 },
+      mcq: [
+        ["'एका संख्येची दुप्पट करून त्यात चार मिळवले' याचे बीजगणितीय रूप कोणते?", ["x + 2", "x + 3", "2x + 4", "x + 5"], "C) 2x + 4"],
+        ["समान अंकांपासून बनलेल्या तीन अंकी संख्येला (उदा. 111, 222) तिच्या अंकांच्या बेरजेने भागल्यास उत्तर काय येते?", ["11", "21", "37", "39"], "C) 37"],
+        ["1, 2, 3, 5, 8, ... हा अनुक्रम कोणता आहे?", ["संख्या ग्रिड", "ओळींचा अनुक्रम", "विरहांक-फिबोनाची", "कॅलेंडर गॅप"], "C) विरहांक-फिबोनाची"],
+        ["कॅलेंडरच्या उभ्या रकान्यातील लगतच्या संख्यांमधील फरक किती असतो?", ["1", "7", "5", "10"], "B) 7"],
+        ["एका 2×2 कॅलेंडर ग्रिडमध्ये संख्या 6, 7, 13 आणि x आहेत, तर x ची किंमत किती?", ["12", "15", "14", "20"], "C) 14"],
+        ["'ab' (b>a) ही संख्या उलट करून वजाबाकी केल्यास फरक नेहमी कोणत्या संख्येने विभाज्य असतो?", ["7", "8", "9", "11"], "C) 9"]
+      ],
+      m1: [
+        ["जर एका संख्येच्या 3 पटीत 7 मिळवले, तर उत्तर 19 येते. ती संख्या कोणती?", "3x + 7 = 19 ⇒ x = 4"],
+        ["रामाचे आजचे वय x वर्षे आहे. 5 वर्षांनंतर त्याचे वय 20 वर्षे होईल, तर आजचे वय काढा.", "x + 5 = 20 ⇒ x = 15 वर्षे"],
+        ["'ab' या दोन अंकी संख्येचे विस्तारित रूप लिहा.", "10a + b"],
+        ["तीन अंकी संख्या (abc - cba) चा फरक नेहमी कोणत्या संख्येने विभाज्य असतो?", "99"],
+        ["दोन संख्यांची बेरीज 10 आहे, तर त्यांचा जास्तीत जास्त संभाव्य गुणाकार किती?", "5 × 5 = 25"]
+      ],
+      m2: [
+        ["एका संख्येची दुप्पट करून त्यात 10 मिळवले. त्या बेरजेची निम्मी पट 15 असल्यास ती संख्या शोधा.", "(1/2)(2x + 10) = 15 ⇒ 2x + 10 = 30 ⇒ x = 10."],
+        ["विरहांक-फिबोनाची अनुक्रमातील 1, 2, 3, 5, 8 यापुढील तीन संख्या शोधा.", "13, 21, 34."],
+        ["आईचे आजचे वय 28 वर्षे व मुलीचे 4 वर्षे आहे. किती वर्षांनंतर आईचे वय मुलीच्या वयाच्या 3 पट होईल?", "28 + x = 3(4 + x) ⇒ 2x = 16 ⇒ x = 8 वर्षे."],
+        ["724 मधील अंकांची अदलाबदल करून मिळणारी संख्या आणि 724 यांमधील फरक 99 ने विभाज्य आहे, हे सिद्ध करा.", "724 - 427 = 297; 297 ÷ 99 = 3 (पूर्ण भाग जातो)."]
+      ],
+      m3: [
+        ["कॅलेंडरमधील एका 2×2 चौकटीची बेरीज 52 आहे, तर त्या चौकटीतील 4 संख्या शोधा.", "4a + 16 = 52 ⇒ 4a = 36 ⇒ a = 9; संख्या = 9, 10, 16, 17."],
+        ["दाखवा की abc, bca आणि cab या तीन-अंकी संख्यांची बेरीज नेहमी 37 आणि 111 ने विभाज्य असते.", "बेरीज = 111(a + b + c) = 3 × 37 × (a + b + c); म्हणून ती 37 व 111 ने विभाज्य आहे."],
+        ["पूर्ण पिरॅमिड न रचता तळच्या ओळींवरून सर्वात वरची संख्या शोधा: i) 4, 13, 8  ii) 7, 11, 3  iii) 10, 14, 25", "सूत्र (a + 2b + c): i) 38, ii) 32, iii) 63."]
+      ],
+      m4: [
+        ["एका शेतात काही घोडे आणि कोंबड्या आहेत. त्यांच्या डोक्यांची एकूण संख्या 55 आणि पायांची एकूण संख्या 150 आहे. शेतात किती घोडे व किती कोंबड्या आहेत?", "x + y = 55 आणि 4x + 2y = 150 ⇒ 2x + y = 75 ⇒ x = 20 घोडे, y = 35 कोंबड्या."],
+        ["3 ओळींच्या संख्या पिरॅमिडच्या तळच्या ओळीत पहिल्या तीन विरहांक-फिबोनाची संख्या (1, 2, 3) लिहिल्या आहेत. पिरॅमिड पूर्ण करा व सर्वात वरची संख्या सांगा.", "दुसरी ओळ: 3, 5; सर्वात वरची संख्या: 8; या सर्व विरहांक-फिबोनाची संख्या आहेत."]
+      ]
+    },
+    "14": {
+      title: "क्षेत्रफळ",
+      blueprint: { mcq: 4, m1: 2, m2: 3, m3: 0, m4: 2 },
+      mcq: [
+        ["जर एका आयताची लांबी 4 सेमी आणि रुंदी 6 सेमी असेल, तर क्षेत्रफळ किती?", ["24 चौ.सेमी", "12 चौ.सेमी", "10 चौ.सेमी", "20 चौ.सेमी"], "A) 24 चौ.सेमी"],
+        ["जर एका चौरसाची परिमिती 20 सेमी असेल, तर त्याचे क्षेत्रफळ किती?", ["50 चौ.सेमी", "16 चौ.सेमी", "40 चौ.सेमी", "25 चौ.सेमी"], "D) 25 चौ.सेमी"],
+        ["5 सेमी पाया आणि 8 सेमी उंची असलेल्या त्रिकोणाचे क्षेत्रफळ किती?", ["15 चौ.सेमी", "20 चौ.सेमी", "40 चौ.सेमी", "10 चौ.सेमी"], "B) 20 चौ.सेमी"],
+        ["समांतरभुज चौकोनाचे क्षेत्रफळ काढण्याचे सूत्र कोणते?", ["1/2×पाया×उंची", "2×पाया×उंची", "4×पाया×उंची", "पाया×उंची"], "D) पाया×उंची"],
+        ["ज्या समभुज चौकोनाचे कर्ण 10 सेमी आणि 12 सेमी आहेत, त्याचे क्षेत्रफळ किती?", ["120 चौ.सेमी", "60 चौ.सेमी", "240 चौ.सेमी", "30 चौ.सेमी"], "B) 60 चौ.सेमी"],
+        ["समलंब चौकोनाचे क्षेत्रफळ 60 चौ.सेमी व समांतर बाजूंची बेरीज 30 सेमी असल्यास उंची किती?", ["4 सेमी", "8 सेमी", "12 सेमी", "24 सेमी"], "A) 4 सेमी"],
+        ["समद्विभुज काटकोन त्रिकोणाची एक समान बाजू 8 सेमी असल्यास क्षेत्रफळ किती?", ["16 चौ.सेमी", "48 चौ.सेमी", "64 चौ.सेमी", "32 चौ.सेमी"], "D) 32 चौ.सेमी"]
+      ],
+      m1: [
+        ["जर चौरसाची बाजू दुप्पट केली, तर त्याच्या क्षेत्रफळात काय बदल होईल?", "क्षेत्रफळ चार पटीने वाढते."],
+        ["एका समांतरभुज चौकोनाचे क्षेत्रफळ 50 चौ.सेमी आणि पाया 10 सेमी असल्यास उंची शोधा.", "50 ÷ 10 = 5 सेमी"],
+        ["7.5 सेमी बाजू असलेल्या समभुज चौकोनाची परिमिती शोधा.", "4 × 7.5 = 30 सेमी"],
+        ["समलंब चौकोनाचे क्षेत्रफळ काढण्याचे सूत्र लिहा.", "क्षेत्रफळ = (1/2) × (a + b) × h"]
+      ],
+      m2: [
+        ["एका आयताकृती मैदानाच्या लांबी व रुंदीचे गुणोत्तर 3 : 2 असून क्षेत्रफळ 600 चौ.मी. आहे. लांबी व रुंदी शोधा.", "6x² = 600 ⇒ x = 10; लांबी = 30 मी, रुंदी = 20 मी."],
+        ["एका चौरसाचे क्षेत्रफळ 441 चौ.सेमी आहे. त्याची परिमिती शोधा.", "बाजू = √441 = 21 सेमी; परिमिती = 4 × 21 = 84 सेमी."],
+        ["एका समभुज चौकोनाचे कर्ण 16 सेमी आणि 12 सेमी आहेत. त्याचे क्षेत्रफळ शोधा.", "(1/2) × 16 × 12 = 96 चौ.सेमी."],
+        ["एका समलंब चौकोनाचे क्षेत्रफळ 162 चौ.सेमी, उंची 9 सेमी व एक समांतर बाजू 15 सेमी असल्यास दुसरी समांतर बाजू काढा.", "(9/2)(15 + b) = 162 ⇒ 15 + b = 36 ⇒ b = 21 सेमी."]
+      ],
+      m3: [
+        ["50 मी लांब व 40 मी रुंद आयताकृती बागेच्या आतून 2 मी रुंदीचा रस्ता तयार केला आहे. त्या रस्त्याचे क्षेत्रफळ काढा.", "बाहेरील = 2000; आतील = 46 × 36 = 1656; रस्ता = 344 चौ.मी."],
+        ["एका आयताची लांबी 9 सेमी व रुंदी 3 सेमी आहे. त्याच्या क्षेत्रफळाचे परिमितीशी असलेले गुणोत्तर काढा.", "क्षेत्रफळ = 27, परिमिती = 24; गुणोत्तर = 27 : 24 = 9 : 8."],
+        ["एका समभुज चौकोनाची परिमिती 52 सेमी व एक कर्ण 24 सेमी आहे. त्याचे क्षेत्रफळ काढा.", "बाजू = 13 सेमी; दुसऱ्या कर्णाचा अर्धा = 5 ⇒ दुसरा कर्ण = 10 सेमी; क्षेत्रफळ = (1/2)×24×10 = 120 चौ.सेमी."]
+      ],
+      m4: [
+        ["एका शेतकऱ्याची जमीन समलंब चौकोनाकार असून समांतर बाजू 45 मी व 65 मी आणि अंतर 30 मी आहे. प्रति चौ.मी. 10 किग्रॅ भाज्या पिकत असल्यास एकूण उत्पादन काढा.", "क्षेत्रफळ = (1/2)×(45+65)×30 = 1650 चौ.मी.; एकूण उत्पादन = 1650 × 10 = 16,500 किग्रॅ."],
+        ["एक भिंत समलंब चौकोनाकार असून तिच्या समांतर बाजू 12 मी व 18 मी आणि लंब अंतर 10 मी आहे. ₹50 प्रति चौ.मी. दराने रंगवण्याचा एकूण खर्च काढा.", "क्षेत्रफळ = (1/2)×(12+18)×10 = 150 चौ.मी.; एकूण खर्च = 150 × 50 = ₹7,500."],
+        ["एका समभुज चौकोनी मैदानाचे कर्ण 50 मी आणि 120 मी आहेत. ₹25 प्रति मीटर दराने चहूबाजूंनी कुंपण घालण्याचा एकूण खर्च काढा.", "बाजू = √(25² + 60²) = 65 मी; परिमिती = 4 × 65 = 260 मी; एकूण खर्च = 260 × 25 = ₹6,500."]
+      ]
+    }
+  };
+
+  var lessonWrap = root.querySelector("#sg8mp2Lessons"),
+      school = root.querySelector("#sg8mp2School"),
+      test = root.querySelector("#sg8mp2Test"),
+      time = root.querySelector("#sg8mp2Time"),
+      status = root.querySelector("#sg8mp2Status"),
+      previewArea = root.querySelector("#sg8mp2PreviewArea"),
+      paper = root.querySelector("#sg8mp2Paper"),
+      btnGen = root.querySelector("#sg8mp2Generate"),
+      btnKey = root.querySelector("#sg8mp2Key"),
+      btnPrev = root.querySelector("#sg8mp2Preview"),
+      btnPrint = root.querySelector("#sg8mp2Print"),
+      btnAll = root.querySelector("#sg8mp2SelectAll");
+
+  var current = null, paperMode = "qcas";
+
+  Object.keys(DB).forEach(function (k) {
+    var lab = document.createElement("label");
+    lab.className = "sg8mp2-lesson";
+    lab.innerHTML = '<input type="checkbox" class="sg8mp2-chk" value="' + k + '"> <span>' + k + ". " + DB[k].title + "</span>";
+    lessonWrap.appendChild(lab);
+  });
+
+  function syncModeTabs(mode) {
+    paperMode = mode;
+    var btns = root.querySelectorAll(".sg8mp2-tabBtn, .sg8mp2-miniTab");
+    for (var i = 0; i < btns.length; i++) {
+      if (btns[i].getAttribute("data-mode") === mode) {
+        btns[i].classList.add("sg8mp2-active");
+      } else {
+        btns[i].classList.remove("sg8mp2-active");
+      }
+    }
+    if (current) render();
+  }
+
+  var modeBtns = root.querySelectorAll(".sg8mp2-tabBtn, .sg8mp2-miniTab");
+  for (var mb = 0; mb < modeBtns.length; mb++) {
+    modeBtns[mb].addEventListener("click", function () {
+      syncModeTabs(this.getAttribute("data-mode"));
+    });
+  }
+
+  function esc(v) {
+    var d = document.createElement("div");
+    d.textContent = v == null ? "" : String(v);
+    return d.innerHTML;
+  }
+  function shuf(a) {
+    var x = a.slice();
+    for (var i = x.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = x[i]; x[i] = x[j]; x[j] = t;
+    }
+    return x;
+  }
+  function checked() {
+    return Array.prototype.slice.call(root.querySelectorAll(".sg8mp2-chk:checked")).map(function (x) { return x.value; });
+  }
+  function msg(t, good) {
+    status.className = "sg8mp2-status " + (good ? "sg8mp2-ok" : "sg8mp2-warn");
+    status.textContent = t;
+  }
+  function pool(ids, type) {
+    var a = [];
+    ids.forEach(function (id) { a = a.concat(DB[id][type] || []); });
+    return shuf(a);
+  }
+
+  function generate() {
+    var ids = checked();
+    if (!ids.length) {
+      msg("कृपया किमान एक पाठ निवडा.", false);
+      alert("कृपया किमान एक पाठ निवडा.");
+      return;
+    }
+    var cfg = ids.length === 1 ? DB[ids[0]].blueprint : { mcq: 4, m1: 3, m2: 3, m3: 1, m4: 1 };
+    var p = {
+      mcq: pool(ids, "mcq"),
+      m1: pool(ids, "m1"),
+      m2: pool(ids, "m2"),
+      m3: pool(ids, "m3"),
+      m4: pool(ids, "m4")
+    };
+    var sel = {
+      mcq: p.mcq.slice(0, cfg.mcq),
+      m1: p.m1.slice(0, cfg.m1),
+      m2: p.m2.slice(0, cfg.m2),
+      m3: p.m3.slice(0, cfg.m3),
+      m4: p.m4.slice(0, cfg.m4)
+    };
+    var totalMarks = sel.mcq.length * 1 + sel.m1.length * 1 + sel.m2.length * 2 + sel.m3.length * 3 + sel.m4.length * 4;
+    current = {
+      school: school.value.trim() || "शाळेचे नाव",
+      test: test.value.trim() || "अध्ययन आधारित मूल्यमापन (LBA)",
+      marks: totalMarks,
+      time: time.value,
+      sel: sel
+    };
+    render();
+    previewArea.style.display = "block";
+    btnKey.disabled = false;
+    btnPrev.disabled = false;
+    btnPrint.disabled = false;
+    btnKey.textContent = "&#x1f511; उत्तरतालिका दाखवा / लपवा";
+    msg("20 गुणांची प्रश्नपत्रिका यशस्वीरीत्या तयार झाली.", true);
+    setTimeout(function () {
+      try { previewArea.scrollIntoView({ behavior: "smooth", block: "start" }); }
+      catch (e) { previewArea.scrollIntoView(); }
+    }, 60);
+  }
+
+  function render() {
+    var d = current, s = d.sel, isAns = (paperMode === "qcas"), h = "", key = "", qn = 1;
+    paper.className = "sg8mp2-sheet" + (isAns ? "" : " sg8mp2-qpOnly");
+    h += '<div class="sg8mp2-header">';
+    h += '<div class="sg8mp2-school">' + esc(d.school) + "</div>";
+    h += '<div class="sg8mp2-test">' + esc(d.test) + "</div>";
+    h += '<div class="sg8mp2-modeBadge">' + (isAns ? "प्रश्न-कम-उत्तरपत्रिका (Question Cum Answer Sheet)" : "प्रश्नपत्रिका (Question Paper)") + "</div>";
+    h += '<div class="sg8mp2-meta"><span>इयत्ता: 8 वी</span><span>विषय: गणित (भाग - 2)</span><span>एकूण गुण: ' + d.marks + "</span><span>वेळ: " + d.time + " मिनिटे</span></div>";
+    if (isAns) {
+      h += '<div class="sg8mp2-studentRow"><span>विद्यार्थ्याचे नाव: ____________________________________</span><span>हजेरी क्र.: ______</span><span>दिनांक: ___/___/20__</span></div>';
+    }
+    h += "</div>";
+
+    key = '<div id="sg8mp2KeySheet" class="sg8mp2-keySheet"><div class="sg8mp2-keyTitle">उत्तरतालिका (Answer Key)</div>';
+
+    if (s.mcq.length) {
+      h += '<div class="sg8mp2-sec"><div class="sg8mp2-qhead"><span>प्र. ' + qn + '. योग्य पर्याय निवडून पूर्ण उत्तर लिहा.</span><span class="sg8mp2-qmarks">[' + s.mcq.length + " × 1 = " + s.mcq.length + " गुण]</span></div>";
+      key += '<div class="sg8mp2-qhead"><span>प्र. ' + qn + ". बहुपर्यायी उत्तरे:</span></div>";
+      s.mcq.forEach(function (x, i) {
+        h += '<div class="sg8mp2-qblock"><div class="sg8mp2-q">' + (i + 1) + ") " + esc(x[0]) + '</div><div class="sg8mp2-options">';
+        x[1].forEach(function (o, j) { h += "<div>" + String.fromCharCode(65 + j) + ") " + esc(o) + "</div>"; });
+        h += "</div>";
+        if (isAns) h += '<div class="sg8mp2-ansLine"><span>उत्तर:</span><span class="sg8mp2-line"></span></div>';
+        h += "</div>";
+        key += '<div class="sg8mp2-keyAns">' + (i + 1) + ") " + esc(x[2]) + "</div>";
+      });
+      h += "</div>"; qn++;
+    }
+
+    if (s.m1.length) {
+      h += '<div class="sg8mp2-sec"><div class="sg8mp2-qhead"><span>प्र. ' + qn + '. खालील प्रश्नांची एका वाक्यात / एका पायरीत उत्तरे लिहा.</span><span class="sg8mp2-qmarks">[' + s.m1.length + " × 1 = " + s.m1.length + " गुण]</span></div>";
+      key += '<div class="sg8mp2-qhead"><span>प्र. ' + qn + ". एक गुणांची उत्तरे:</span></div>";
+      s.m1.forEach(function (x, i) {
+        h += '<div class="sg8mp2-qblock"><div class="sg8mp2-q">' + (i + 1) + ") " + esc(x[0]) + "</div>";
+        if (isAns) h += '<div class="sg8mp2-ansLine"><span>उत्तर:</span><span class="sg8mp2-line"></span></div>';
+        h += "</div>";
+        key += '<div class="sg8mp2-keyAns">' + (i + 1) + ") " + esc(x[1]) + "</div>";
+      });
+      h += "</div>"; qn++;
+    }
+
+    if (s.m2.length) {
+      h += '<div class="sg8mp2-sec"><div class="sg8mp2-qhead"><span>प्र. ' + qn + '. खालील उदाहरणे सोडवा.</span><span class="sg8mp2-qmarks">[' + s.m2.length + " × 2 = " + (s.m2.length * 2) + " गुण]</span></div>";
+      key += '<div class="sg8mp2-qhead"><span>प्र. ' + qn + ". दोन गुणांची उत्तरे:</span></div>";
+      s.m2.forEach(function (x, i) {
+        h += '<div class="sg8mp2-qblock"><div class="sg8mp2-q">' + (i + 1) + ") " + esc(x[0]) + "</div>";
+        if (isAns) h += '<div class="sg8mp2-box"></div>';
+        h += "</div>";
+        key += '<div class="sg8mp2-keyAns">' + (i + 1) + ") " + esc(x[1]) + "</div>";
+      });
+      h += "</div>"; qn++;
+    }
+
+    if (s.m3.length) {
+      h += '<div class="sg8mp2-sec"><div class="sg8mp2-qhead"><span>प्र. ' + qn + '. खालील उदाहरणे पायरी-पायरीने सोडवा.</span><span class="sg8mp2-qmarks">[' + s.m3.length + " × 3 = " + (s.m3.length * 3) + " गुण]</span></div>";
+      key += '<div class="sg8mp2-qhead"><span>प्र. ' + qn + ". तीन गुणांची उत्तरे:</span></div>";
+      s.m3.forEach(function (x, i) {
+        h += '<div class="sg8mp2-qblock"><div class="sg8mp2-q">' + (i + 1) + ") " + esc(x[0]) + "</div>";
+        if (isAns) h += '<div class="sg8mp2-box sg8mp2-medbox"></div>';
+        h += "</div>";
+        key += '<div class="sg8mp2-keyAns">' + (i + 1) + ") " + esc(x[1]) + "</div>";
+      });
+      h += "</div>"; qn++;
+    }
+
+    if (s.m4.length) {
+      h += '<div class="sg8mp2-sec"><div class="sg8mp2-qhead"><span>प्र. ' + qn + '. खालील प्रश्न सविस्तर सोडवा.</span><span class="sg8mp2-qmarks">[' + s.m4.length + " × 4 = " + (s.m4.length * 4) + " गुण]</span></div>";
+      key += '<div class="sg8mp2-qhead"><span>प्र. ' + qn + ". चार गुणांची उत्तरे:</span></div>";
+      s.m4.forEach(function (x, i) {
+        h += '<div class="sg8mp2-qblock"><div class="sg8mp2-q">' + (i + 1) + ") " + esc(x[0]) + "</div>";
+        if (isAns) h += '<div class="sg8mp2-box sg8mp2-longbox"></div>';
+        h += "</div>";
+        key += '<div class="sg8mp2-keyAns">' + (i + 1) + ") " + esc(x[1]) + "</div>";
+      });
+      h += "</div>";
+    }
+
+    h += '<div class="sg8mp2-watermark">SmartGuruji</div>';
+    key += "</div>";
+    paper.innerHTML = h + key;
+  }
+
+  btnGen.addEventListener("click", function (e) { e.preventDefault(); generate(); });
+  btnAll.addEventListener("click", function () {
+    var c = root.querySelectorAll(".sg8mp2-chk"), all = true;
+    for (var i = 0; i < c.length; i++) if (!c[i].checked) { all = false; break; }
+    for (var j = 0; j < c.length; j++) c[j].checked = !all;
+  });
+  btnKey.addEventListener("click", function () {
+    if (!current) return;
+    var s = paper.querySelector("#sg8mp2KeySheet");
+    if (!s) return;
+    var show = s.style.display !== "block";
+    s.style.display = show ? "block" : "none";
+    btnKey.textContent = show ? "&#x1f510; उत्तरतालिका लपवा" : "&#x1f511; उत्तरतालिका दाखवा / लपवा";
+  });
+  btnPrev.addEventListener("click", function () {
+    if (!current) return;
+    try { previewArea.scrollIntoView({ behavior: "smooth", block: "start" }); }
+    catch (e) { previewArea.scrollIntoView(); }
+  });
+  btnPrint.addEventListener("click", function () {
+    if (!current) { alert("प्रथम पेपर तयार करा."); return; }
+    window.print();
+  });
+})();
+</script>
